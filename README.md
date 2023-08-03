@@ -20,3 +20,7 @@ app.get("/dark", async (req, res) => {
   }
 });
 ```
+http://localhost:3000/Programming?
+
+![image](https://github.com/Satvik-15/Generate-jokes-using-API/assets/77858316/30c97bbf-f940-43d0-83d3-3a2ccc194e02)
+

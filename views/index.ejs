@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Center Aligned Card</title>
+    <style>
+      .card {
+        width: 700px;
+        height: 250px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        background-color: #f4f6f7;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      body {
+        background: radial-gradient(circle, transparent 20%, #d1f6c1 20%, #d1f6c1 80%, transparent 80%, transparent) 0% 0% / 26px 26px, radial-gradient(circle, transparent 20%, #d1f6c1 20%, #d1f6c1 80%, transparent 80%, transparent) 13px 13px / 26px 26px, linear-gradient(#4c73d8 1px, transparent 1px) 0px -0.5px / 13px 13px, linear-gradient(90deg, #4c73d8 1px, #d1f6c1 1px) -0.5px 0px / 13px 13px #d1f6c1;
+        background-size: 26px 26px, 26px 26px, 13px 13px, 13px 13px;
+        background-color: #d1f6c1;
+      }
+      .btn {
+        background: #3498db;
+        background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+        background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+        background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+        background-image: -o-linear-gradient(top, #3498db, #2980b9);
+        background-image: linear-gradient(to bottom, #3498db, #2980b9);
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        background: #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        text-decoration: none;
+      }
+
+      .header {
+        font-size: 30px;
+      }
+
+      .paragraph {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="header"><%=category%> Joke 😃</h1>
+      <p class="paragraph">🤔 <%=set_up%></p>
+      <p class="paragraph">😎 <%=delivery%></p>
+
+      <form>
+        <input class="btn" type="submit" value="Dark" formaction="/dark">
+        <input
+          class="btn"
+          type="submit"
+          value="Programming"
+          formaction="/Programming">
+        <input class="btn" type="submit" value="Pun" formaction="/Pun">
+        <input class="btn" type="submit" value="Spooky" formaction="/Spooky">
+        <input
+          class="btn"
+          type="submit"
+          value="Misc"
+          formaction="/Miscellaneous">
+      </form>
+    </div>
+  </body>
+</html>
